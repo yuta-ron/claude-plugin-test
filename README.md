@@ -5,7 +5,8 @@
 ## インストール
 
 ```
-/plugin install <git-url>
+/plugin marketplace add yuta-ron/claude-plugin-test
+/plugin install greeting-plugin@greeting-plugin-marketplace
 ```
 
 ## 使い方

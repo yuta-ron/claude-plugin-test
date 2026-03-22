@@ -1,6 +1,5 @@
 {
   "name": "greeting-plugin",
   "version": "1.1.0",
-  "description": "pluginのテストのために作ったもの",
-  "skills": ["greeting", "tech-news"]
+  "description": "pluginのテストのために作ったもの"
 }
