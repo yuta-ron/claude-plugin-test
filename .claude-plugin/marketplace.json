@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "greeting-plugin-marketplace",
+  "owner": {
+    "name": "yuta-ron"
+  },
+  "plugins": [
+    {
+      "name": "greeting-plugin",
+      "description": "挨拶とテックニュース収集のスキル集",
+      "source": "."
+    }
+  ]
+}
