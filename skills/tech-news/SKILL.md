@@ -4,7 +4,7 @@ description: HackerNews・Reddit・国内メガベンチャーのテックブロ
 user-invocable: true
 context: fork
 agent: general-purpose
-allowed-tools: WebFetch, WebSearch
+allowed-tools: WebFetch, WebSearch, Bash(curl:*), Bash(python3:*)
 ---
 
 以下のソースから最新のテック記事を収集し、日本語で要約してください。
@@ -14,8 +14,8 @@ allowed-tools: WebFetch, WebSearch
 ### 海外メディア
 1. HackerNews Top Stories API: https://hacker-news.firebaseio.com/v0/topstories.json
    - 上位10件のIDを取得し、各記事の詳細を https://hacker-news.firebaseio.com/v0/item/{id}.json で取得
-2. Reddit r/programming: https://www.reddit.com/r/programming/hot.json?limit=5
-3. Reddit r/MachineLearning: https://www.reddit.com/r/MachineLearning/hot.json?limit=5
+2. Reddit r/programming: `curl -s -A "Mozilla/5.0" "https://www.reddit.com/r/programming/hot.json?limit=5"`
+3. Reddit r/MachineLearning: `curl -s -A "Mozilla/5.0" "https://www.reddit.com/r/MachineLearning/hot.json?limit=5"`
 
 ### 国内テックブログ（各1〜2件）
 4. LINEヤフー: https://techblog.lycorp.co.jp/ja

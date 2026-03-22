@@ -9,6 +9,11 @@
 /plugin install greeting-plugin@greeting-plugin-marketplace
 ```
 
+
+```
+claude --plugin-dir /Users/yutaro/ghq/github.com/yuta-ron/claude-plugin-test
+/reload-plugins
+```
 ## 使い方
 
 ```
